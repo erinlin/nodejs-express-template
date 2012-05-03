@@ -5,17 +5,16 @@ html
 		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
 		
 	body
-		header
-			.container
-				.row
-					.span2
-						nav
-							ul
-								li
-									a(href="/") Home
-								li
-									a(href="/about") About
-								li
-									a(href="/contact") Contact
-					.span10
-						body!=body
+		.container
+			.row
+				.span2
+					nav
+						ul
+							li
+								a(href="/") Home
+							li
+								a(href="/about") About
+							li
+								a(href="/contact") Contact
+				.span10
+					!=body

@@ -3,7 +3,6 @@ var fs = require('fs');
 module.exports = function(app){
     fs.readdirSync(__dirname + "/routes" ).forEach(function(file) {
         var name = file.substr(0,-2);
-				console.log(__dirname + "/"+ name);
         require("./routes/" + name)(app);
     });
 		/* 404 */ 
